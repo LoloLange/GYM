@@ -1,11 +1,5 @@
-import { FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaHouse } from "react-icons/fa6";
-import { IoIosMail } from "react-icons/io";
-import { FaPhone } from "react-icons/fa";
 import { navbarLinks } from "./Navbar";
+import { contactItems, socialLinks } from "../constants/constants";
 
 export const Footer = () => {
   return (
@@ -21,39 +15,25 @@ export const Footer = () => {
 
       {navbarLinks()}
 
-      <div className="flex flex-col text-[30px] gap-x-5">
-        <div className="flex items-center text-[17px]">
-          <FaHouse />
-          <p className="pl-2">Miami 1234, US</p>
-        </div>
-
-        <div className="flex items-center text-[17px]">
-          <IoIosMail />
-          <p className="pl-2">info@example.com</p>
-        </div>
-
-        <div className="flex items-center text-[17px]">
-          <FaPhone />
-          <p className="pl-2">+1 2345 6789</p>
-        </div>
+      <div className="flex flex-col min-[2000px]:text-[18px] gap-3">
+        {contactItems.map((item) => (
+          <div key={item.label} className="flex items-center">
+            {<item.icon />}
+            <p className="pl-2">{item.text}</p>
+          </div>
+        ))}
       </div>
 
-      <div className="flex justify-evenly items-center text-[30px] gap-x-5">
-        <a href="" className="hover:text-[#3E8959] transition-all">
-          <FaInstagram />
-        </a>
-        <a href="" className="hover:text-[#3E8959] transition-all">
-          <FaXTwitter />
-        </a>
-        <a href="" className="hover:text-[#3E8959] transition-all">
-          <FaYoutube />
-        </a>
-        <a
-          href="https://github.com/lololange"
-          className="hover:text-[#3E8959] transition-all"
-        >
-          <FaGithub />
-        </a>
+      <div className="flex justify-evenly items-center text-[30px] min-[2000px]:text-[40px] gap-x-5">
+        {socialLinks.map((link) => (
+          <a
+            key={link.href}
+            href={link.href}
+            className="hover:text-[#3E8959] transition-all"
+          >
+            {<link.icon />}
+          </a>
+        ))}
       </div>
     </footer>
   );

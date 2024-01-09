@@ -3,7 +3,7 @@ import { programs } from "../../constants/constants";
 
 export const Programs = () => {
   return (
-    <section className="bg-[#EEE9DD] py-[50px]">
+    <section className="bg-[#EEE9DD] py-[50px]" id="programs">
       <p
         style={{ zIndex: "50" }}
         className="text-[50px] text-black font-[800] text-center"

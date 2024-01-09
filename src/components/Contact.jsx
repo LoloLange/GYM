@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <section className="bg-[#3E8959] py-[50px]">
+    <section className="bg-[#3E8959] py-[50px]" id="contact">
       <p
         style={{ zIndex: "50" }}
         className="text-[50px] font-[800] text-center text-white"
@@ -9,13 +9,13 @@ export const Contact = () => {
       </p>
 
       <div className="flex flex-col items-center">
-        <p className="max-[750px]:mx-[20px] text-[18px] text-white">
+        <p className="max-[750px]:mx-[20px] text-[18px] min-[2000px]:text-[22px] text-white">
           Reach out if you have any doubts or want to apply for a plan, service
           or program.
         </p>
 
         <form method="get">
-          <div className="pt-[25px]">
+          <div className="pt-[25px] min-[2000px]:text-[22px]">
             <div className="w-[80vw] md:w-[70vw] flex">
               <input
                 type="text"
@@ -60,7 +60,7 @@ export const Contact = () => {
               <button
                 type="submit"
                 id="submit"
-                className="bg-[#3E8959] text-white px-3 py-2 mt-5 w-[80vw] md:w-[70vw] rounded-lg hover:brightness-[0.9] transition-all shadow-lg hover:-translate-y-1"
+                className="bg-black text-white px-3 py-2 mt-5 w-[80vw] md:w-[70vw] rounded-lg hover:brightness-[0.9] transition-all shadow-lg hover:-translate-y-1"
               >
                 Submit
               </button>

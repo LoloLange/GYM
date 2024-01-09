@@ -16,6 +16,14 @@ import { TbYoga } from "react-icons/tb";
 
 import { GiWeightScale } from "react-icons/gi";
 
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaHouse } from "react-icons/fa6";
+import { IoIosMail } from "react-icons/io";
+import { FaPhone } from "react-icons/fa";
+
 export const activities = [
   { name: "Strength" },
   { name: "Walking" },
@@ -139,4 +147,17 @@ export const services = [
       "Elevate your fitness with our dynamic Cardio Workouts. From heart-pumping intervals to energizing sessions, our program enhances cardiovascular health, leaving you invigorated.",
     icon: IoFitness,
   },
+];
+
+export const contactItems = [
+  { label: "Address", icon: FaHouse, text: "Miami 1234, US" },
+  { label: "Email", icon: IoIosMail, text: "info@example.com" },
+  { label: "Phone", icon: FaPhone, text: "+1 2345 6789" },
+];
+
+export const socialLinks = [
+  { icon: FaInstagram, href: "https://www.instagram.com/" },
+  { icon: FaXTwitter, href: "https://twitter.com/" },
+  { icon: FaYoutube, href: "https://www.youtube.com/" },
+  { icon: FaGithub, href: "https://github.com/lololange" },
 ];

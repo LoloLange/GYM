@@ -1,7 +1,6 @@
 import "./App.css";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-// import { Activities } from "./components/Activities";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { Pricing } from "./components/Pricing/Pricing";
@@ -13,7 +12,6 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      {/* <Activities /> */}
       <Services />
       <Programs />
       <Pricing />
