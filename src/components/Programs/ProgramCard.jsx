@@ -10,9 +10,7 @@ export const ProgramCard = ({ name, img, description, icon }) => {
       />
       <div className="text-[30px] flex items-center">
         <p className="font-[600] text-[30px] tracking-wide pt-2">{name}</p>
-        <span className=" text-[#3E8959] ml-2">
-          {icon}
-        </span>
+        <span className=" text-[#3E8959] ml-2">{icon}</span>
       </div>
       <p className="text-black">{description}</p>
     </div>

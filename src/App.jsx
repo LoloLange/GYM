@@ -4,9 +4,9 @@ import { Footer } from "./components/Footer";
 // import { Activities } from "./components/Activities";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
-import { Pricing } from "./components/Pricing";
-import { Programs } from "./components/Programs";
-import { Services } from "./components/Services";
+import { Pricing } from "./components/Pricing/Pricing";
+import { Programs } from "./components/Programs/Programs";
+import { Services } from "./components/Services/Services";
 
 function App() {
   return (

@@ -5,16 +5,9 @@ import { FaGithub } from "react-icons/fa";
 import { FaHouse } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
+import { navbarLinks } from "./Navbar";
 
 export const Footer = () => {
-  const links = [
-    { name: "Home" },
-    { name: "Services" },
-    { name: "Programs" },
-    { name: "Pricing" },
-    { name: "Contact" },
-  ];
-
   return (
     <footer className="bg-[#181A1B] py-[50px] text-white flex justify-around items-center flex-wrap gap-x-[15px] gap-y-[20px] px-5">
       <div>
@@ -26,20 +19,7 @@ export const Footer = () => {
         </div>
       </div>
 
-      <div className="w-[600px]">
-        <ul className="flex justify-evenly items-center">
-          {links.map((link) => (
-            <li
-              key={link.name.replace(" ", "-")}
-              className="hover:border-b-[#3E8959] border-b-2 border-transparent hover:brightness-90 transition-all"
-            >
-              <a href={"#" + link.name.replace(" ", "-").toLocaleLowerCase()}>
-                {link.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
+      {navbarLinks()}
 
       <div className="flex flex-col text-[30px] gap-x-5">
         <div className="flex items-center text-[17px]">

@@ -23,7 +23,9 @@ export const Hero = () => {
         >
           TRANSFORM YOUR BODY <br />
           <div className="flex">
-            <span className="text-[#3E8959] max-[570px]:mb-2">ONCE AND FOR ALL </span>
+            <span className="text-[#3E8959] max-[570px]:mb-2">
+              ONCE AND FOR ALL{" "}
+            </span>
             <img
               src={dumbells}
               alt="dumbells icon"

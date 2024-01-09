@@ -9,37 +9,65 @@ export const Contact = () => {
       </p>
 
       <div className="flex flex-col items-center">
-      <p className="max-[750px]:mx-[20px] text-[18px] text-white">Reach out if you have any doubts of want to apply for a plan, service or program.</p>
+        <p className="max-[750px]:mx-[20px] text-[18px] text-white">
+          Reach out if you have any doubts or want to apply for a plan, service
+          or program.
+        </p>
 
-      <form method="get">
+        <form method="get">
+          <div className="pt-[25px]">
+            <div className="w-[80vw] md:w-[70vw] flex">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                className="border rounded-md p-2 w-[50%] outline-0 shadow-md"
+                required
+              />
+              <input
+                type="text"
+                name="surname"
+                id="surname"
+                placeholder="Surname"
+                className="ml-5 border rounded-md p-2 w-[50%] outline-0 shadow-md"
+                required
+              />
+            </div>
 
-        <div className="pt-[25px]">
-          <div className="w-[70vw] flex">
-            <input type="text" name="name" id="name" placeholder="Name"
-              className="border rounded-md p-2 w-[50%] outline-0 shadow-md" required/>
-            <input type="text" name="surname" id="surname" placeholder="Surname"
-              className="ml-5 border rounded-md p-2 w-[50%] outline-0 shadow-md" required/>
+            <div className="w-[80vw] md:w-[70vw] flex pt-5">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                className="border rounded-md p-2 w-full outline-0 shadow-md"
+                required
+              />
+            </div>
+
+            <div className="w-[80vw] md:w-[70vw] flex pt-5">
+              <textarea
+                name="message"
+                id="message"
+                className="border rounded-md p-2 w-full resize-none h-[200px] outline-0 shadow-md"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+
+            <div>
+              <button
+                type="submit"
+                id="submit"
+                className="bg-[#3E8959] text-white px-3 py-2 mt-5 w-[80vw] md:w-[70vw] rounded-lg hover:brightness-[0.9] transition-all shadow-lg hover:-translate-y-1"
+              >
+                Submit
+              </button>
+            </div>
           </div>
-
-          <div className="w-[70vw] flex pt-5">
-            <input type="email" name="email" id="email" placeholder="Email"
-              className="border rounded-md p-2 w-[100%] outline-0 shadow-md" required/>
-          </div>
-
-          <div className="w-[70vw] flex pt-5">
-            <textarea name="message" id="message" className="border rounded-md p-2 w-full resize-none h-[200px] outline-0 shadow-md"
-              placeholder="Message" required></textarea>
-          </div>
-
-          <div>
-            <button type="submit" id="submit"
-              className="bg-[#3E8959] text-white px-3 py-2 mt-5 w-[70vw] rounded-lg hover:brightness-[0.9] transition-all shadow-lg hover:-translate-y-1">
-              Submit
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-</section>
+        </form>
+      </div>
+    </section>
   );
 };

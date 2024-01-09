@@ -4,7 +4,7 @@ export const ServiceCard = ({ name, description, icon }) => {
   return (
     <div
       id="card"
-      className="w-[400px] mt-[10px] cursor-pointer p-[30px] hover:shadow-2xl rounded-lg hover:text-[#3E8959] hover:bg-[#EEE9DD] transition-all text-center"
+      className="w-[400px] mt-[10px] cursor-pointer p-[30px] xl:hover:shadow-2xl rounded-lg xl:hover:text-[#3E8959] xl:hover:bg-[#EEE9DD] transition-all text-center"
     >
       <div className="text-[50px] flex justify-center text- pb-5 text-center">
         <span className="bg-[#3E8959] p-5 rounded-full text-white ">

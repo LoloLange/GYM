@@ -4,12 +4,19 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 export const PricingCard = ({ name, price, services, addBen, icon }) => {
   const checkPlan = () => {
     if (price > 50) {
-      return <small className="opacity-50">Everything included in previous plan plus...</small>;
+      return (
+        <small className="opacity-50">
+          Everything included in previous plan plus...
+        </small>
+      );
     }
   };
 
   return (
-    <div className="w-[400px] rounded-lg bg-[#EEE9DD] pb-5 shadow-xl" id="pricingCard">
+    <div
+      className="w-[400px] rounded-lg bg-[#EEE9DD] pb-5 shadow-xl"
+      id="pricingCard"
+    >
       {/* <img src={img} alt={name + " picture"} className="w-[400px] h-[200px] object-cover object-top rounded-t-lg relative" /> */}
       <div className="text-[40px] pl-5 py-3 text-[#3E8959]">{icon}</div>
       <div className=" ml-5">
@@ -22,15 +29,15 @@ export const PricingCard = ({ name, price, services, addBen, icon }) => {
         </div>
       </div>
 
-      <div className="ml-5 text-[#1c1c1c] font-normal pt-3 min-[823px]:h-[250px]">
+      <div className="ml-5 text-[#1c1c1c] font-normal pt-3 min-[823px]:h-[250px] max-[400px]:mr-3">
         {checkPlan()}
         <p>Services:</p>
         <ul>
           {services.map((ser) => {
             return (
-              <li className="flex items-center" key={ser}>
-                <FaRegCircleCheck className="mx-2 text-[18px] w-[20px] text-[#3E8959]" />
-                {ser}
+              <li className="flex items-center justify-start" key={ser}>
+                <FaRegCircleCheck className="text-[18px] w-[20px] text-[#3E8959]" />
+                <span className="mx-2">{ser}</span>
               </li>
             );
           })}
@@ -40,8 +47,8 @@ export const PricingCard = ({ name, price, services, addBen, icon }) => {
           {addBen.map((ben) => {
             return (
               <li className="flex items-center" key={ben}>
-                <FaRegCircleCheck className="mx-2 text-[18px] w-[20px] text-[#3E8959]" />
-                {ben}
+                <FaRegCircleCheck className="text-[18px]  min-w-fit text-[#3E8959]" />
+                <span className="mx-2 ">{ben}</span>
               </li>
             );
           })}
