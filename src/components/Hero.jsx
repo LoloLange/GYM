@@ -41,7 +41,7 @@ export const Hero = () => {
           personalized training programs, this is your premier destination for
           achieving peak wellness. Join us and experience a fitness journey
           tailored to your goals, supported by a vibrant community dedicated to
-          your success. Elevate your fitness experience with us.
+          your success. Elevate your fitness experience.
         </p>
 
         <button className="bg-black text-white p-[10px] text-[16px] min-[2000px]:text-[20px] shadow-lg hover:-translate-y-[2px] transition-all w-[150px] min-[2000px]:w-[200px] mt-[25px] flex items-center justify-center hover:text-[#3E8959]" onClick={() => scrollTo({ sectionName: 'services'})}>

@@ -37,7 +37,7 @@ export const PricingCard = ({ name, price, services, addBen, icon }) => {
           {services.map((ser) => {
             return (
               <li className="flex items-center justify-start" key={ser}>
-                <FaRegCircleCheck className="text-[18px] w-[20px] text-[#3E8959]" />
+                <FaRegCircleCheck className="text-[18px] min-w-[20px] text-[#3E8959]" />
                 <span className="mx-2">{ser}</span>
               </li>
             );
@@ -48,7 +48,7 @@ export const PricingCard = ({ name, price, services, addBen, icon }) => {
           {addBen.map((ben) => {
             return (
               <li className="flex items-center" key={ben}>
-                <FaRegCircleCheck className="text-[18px]  min-w-fit text-[#3E8959]" />
+                <FaRegCircleCheck className="text-[18px] min-w-[20px] text-[#3E8959]" />
                 <span className="mx-2 ">{ben}</span>
               </li>
             );

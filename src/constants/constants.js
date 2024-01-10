@@ -159,5 +159,5 @@ export const socialLinks = [
   { icon: FaInstagram, href: "https://www.instagram.com/" },
   { icon: FaXTwitter, href: "https://twitter.com/" },
   { icon: FaYoutube, href: "https://www.youtube.com/" },
-  { icon: FaGithub, href: "https://github.com/lololange" },
+  { icon: FaGithub, href: "https://github.com/LoloLange/GYM" },
 ];
