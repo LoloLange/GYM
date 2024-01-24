@@ -19,3 +19,77 @@ body {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 700;
 }
+
+.fade-in {
+  -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.2s; /* Firefox < 16 */
+  -ms-animation: fadein 0.2s; /* Internet Explorer */
+  -o-animation: fadein 0.2s; /* Opera < 12.1 */
+  animation: fadein 0.2s;
+}
+
+@keyframes fadein {
+  from { bottom: 0; }
+  to   { bottom: 40px; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { bottom: 0; }
+  to   { bottom: 40px; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { bottom: 0; }
+  to   { bottom: 40px; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { bottom: 0; }
+  to   { bottom: 40px; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { bottom: 0; }
+  to   { bottom: 40px; }
+}
+
+.fade-out {
+  -webkit-animation: fadeout 0.2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeout 0.2s; /* Firefox < 16 */
+  -ms-animation: fadeout 0.2s; /* Internet Explorer */
+  -o-animation: fadeout 0.2s; /* Opera < 12.1 */
+  animation: fadeout 0.2s;
+}
+
+@keyframes fadeout {
+  from { bottom: 40px; }
+  to   { bottom: -40px; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeout {
+  from { bottom: 40px; }
+  to   { bottom: -40px; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+  from { bottom: 40px; }
+  to   { bottom: -40px; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeout {
+  from { bottom: 40px; }
+  to   { bottom: -40px; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeout {
+  from { bottom: 40px; }
+  to   { bottom: -40px; }
+}

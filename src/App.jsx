@@ -5,6 +5,7 @@ import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { Pricing } from "./components/Pricing/Pricing";
 import { Programs } from "./components/Programs/Programs";
+import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services/Services";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Pricing />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
