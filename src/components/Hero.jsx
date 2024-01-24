@@ -24,7 +24,7 @@ export const Hero = () => {
           className="text-[35px] min-[470px]:text-[40px] min-[630px]:text-[45px] min-[775px]:text-[55px] min-[900px]:text-[65px] min-[1150px]:text-[45px] min-[1200px]:text-[50px] min-[1450px]:text-[70px] min-[2000px]:text-[85px] text-black font-[800]"
         >
           TRANSFORM YOUR BODY <br />
-          <div className="flex">
+          <span className="flex">
             <span className="text-[#3E8959] max-[570px]:mb-2">
               ONCE AND FOR ALL{" "}
             </span>
@@ -33,7 +33,7 @@ export const Hero = () => {
               alt="dumbells icon"
               className="max-[570px]:hidden min-[570px]:w-[70px] min-[630px]:w-[90px] min-[900px]:w-[100px] min-[1150px]:w-[75px] min-[1200px]:w-[85px] min-[1450px]:w-[100px] min-[1450px]:mt-2 select-none ml-5"
             />
-          </div>
+          </span>
         </p>
 
         <p className="w-[300px] min-[400px]:w-[350px] max-[470px]:text-[14px] min-[470px]:w-[400px] min-[570px]:w-[450px] min-[630px]:w-[550px] min-[775px]:w-[700px] min-[1150px]:w-[500px] min-[1200px]:w-[600px] min-[1300px]:w-[700px] min-[2000px]:w-[900px] min-[570px]:text-[17px] min-[2000px]:text-[22px]">

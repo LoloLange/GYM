@@ -7,23 +7,27 @@ export const ScrollToTop = () => {
   const [scrollY, setScrollY] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const scrollHandler = () => {
       setScrollY(window.scrollY);
       if (scrollY > 200) setIsVisible(true);
       else setIsVisible(false);
-    });
+    };
+
+    window.addEventListener("scroll", scrollHandler);
+    
+    return () => window.removeEventListener("scroll", scrollHandler);
   }, [scrollY]);
 
-  return (
-    isVisible ? (
-      <button
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fade-in fixed bottom-10 min-[2000px]:bottom-14 right-10 min-[2000px]:right-14 text-[22px] min-[2000px]:text-[32px] text-[#FFFAFA] bg-[#285340] p-[10px] min-[2000px]:p-[15px] rounded-md shadow-2xl transition-all hover:-translate-y-[2px] hover:brightness-90"
-      ><FaArrowUp/></button>
-    ) : (
-        <button
-        className="fade-out fixed right-10 min-[2000px]:right-14 text-[22px] min-[2000px]:text-[32px] text-[#FFFAFA] bg-[#285340] p-[10px] min-[2000px]:p-[15px] rounded-md shadow-2xl transition-all hover:-translate-y-[2px] hover:brightness-90"
-      ><FaArrowUp/></button>
-    )
+  return isVisible ? (
+    <button
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      className="fade-in fixed bottom-10 min-[2000px]:bottom-14 right-10 min-[2000px]:right-14 text-[22px] min-[2000px]:text-[32px] text-[#FFFAFA] bg-[#285340] p-[10px] min-[2000px]:p-[15px] rounded-md shadow-2xl transition-all hover:-translate-y-[2px] hover:brightness-90"
+    >
+      <FaArrowUp />
+    </button>
+  ) : (
+    <button className="fade-out fixed right-10 min-[2000px]:right-14 text-[22px] min-[2000px]:text-[32px] text-[#FFFAFA] bg-[#285340] p-[10px] min-[2000px]:p-[15px] rounded-md shadow-2xl transition-all hover:-translate-y-[2px] hover:brightness-90">
+      <FaArrowUp />
+    </button>
   );
 };
