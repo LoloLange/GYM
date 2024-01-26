@@ -1,4 +1,4 @@
-import { navbarLinks } from "./Navbar";
+import { NavbarLinks } from "./Navbar/NavbarLinks";
 import { contactItems, socialLinks } from "../constants/constants";
 
 export const Footer = () => {
@@ -13,7 +13,7 @@ export const Footer = () => {
         </div>
       </div>
 
-      {navbarLinks()}
+      <NavbarLinks />
 
       <div className="flex flex-col min-[2000px]:text-[18px] gap-3">
         {contactItems.map((item) => (
