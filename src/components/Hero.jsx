@@ -1,4 +1,4 @@
-import heroBg from "../assets/hero-background.png";
+import heroBg from "../assets/hero-background.webp";
 import dumbells from "../assets/dumbells.png";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { useScrollTo } from "../hooks/useScrollTo";
